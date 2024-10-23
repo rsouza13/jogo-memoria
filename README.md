@@ -8,6 +8,7 @@ Este é um jogo da memória desenvolvido utilizando apenas HTML, CSS e JavaScrip
 
 - **Tabuleiro de Emojis:** Os emojis são usados como ícones visuais, com pares escondidos no tabuleiro que o jogador precisa encontrar.
 - **Interação por Eventos:** A lógica do jogo é implementada com eventos JavaScript que capturam cliques e interações do usuário.
+- **Manipulação de áudio:** Efeitos sonoros são tocados sempre que o Ralph é acertado ou quando o jogador erra.
 - **Feedback Visual:** O uso de CSS para criar animações de revelação de cartas e feedback quando o jogador encontra um par correto ou incorreto.
 - **Responsivo:** O layout do jogo é adaptável para diferentes tamanhos de tela, garantindo jogabilidade em dispositivos móveis e desktops.
 

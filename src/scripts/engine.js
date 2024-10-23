@@ -40,16 +40,25 @@ function virarCarta(){
 
 }
 
+function playSound(audioName){
+    let audio = new Audio(`./src/audios/${audioName}.mp3`)
+    audio.volume = 0.1;
+    audio.play();
+}
+
 function checkAcerto(){
     if(cartasAbertas[0].innerHTML===cartasAbertas[1].innerHTML){
+        playSound("hit");
         cartasAbertas[0].classList.add("boxMath");
         cartasAbertas[1].classList.add("boxMath");
     }else{
+        playSound("err");
         cartasAbertas[0].classList.remove("boxOpen");
         cartasAbertas[1].classList.remove("boxOpen");
     }
     cartasAbertas = [];
     if(document.querySelectorAll(".boxMath").length===emojis.length){
         alert("Você Ganhou, Parabéns!!!");
+        playSound('init');
     }
 }
